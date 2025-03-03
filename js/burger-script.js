@@ -69,4 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
       toggleActions: "play none none reverse",
     },
   });
+  setTimeout(() => {
+    ScrollTrigger.refresh();
+  }, 100);
 });
