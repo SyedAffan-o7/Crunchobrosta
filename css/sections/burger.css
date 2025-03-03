@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f8f3e8;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+}
+
+.burger-section {
+  width: 50%;
+  height: 70vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  flex-direction: row;
+  position: relative;
+  left: 190px;
+  top: 220px;
+}
+
+/* Burger Section */
+.burger {
+  position: relative;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Burger Layers */
+.layer {
+  position: absolute;
+  width: 250px;
+  opacity: 1; /* Ensure it's visible */
+}
+
+.top-bun {
+  z-index: 10;
+  top: 0;
+  width: 400px;
+}
+.lettuce {
+  width: 400px;
+  top: 165px;
+}
+.bottom-bun {
+  width: 400px;
+  top: 280px;
+}
+.tray {
+  width: 500px;
+  top: 160px;
+  z-index: -10;
+}
+.drink_section {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  left: 250px;
+  top: -190px;
+}
+.drink {
+  width: 220px;
+  height: 500px;
+  top: 70px;
+  left: 10 0px;
+  z-index: -10;
+}
+.fry {
+  position: relative;
+  width: 270px;
+  height: 450px;
+  top: 120px;
+  left: -400px;
+  z-index: 10;
+}
+.table {
+  position: relative;
+  width: 850px;
+  left: -930px;
+  top: 140px;
+  z-index: -50;
+}

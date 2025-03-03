@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/sushi.png" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <title>Cruncho Broasta</title>
+  </head>
+  <body>
+    <header>
+      <nav class="header__nav">
+        <div class="header__logo">
+          <h1><span>Cruncho</span> Brosta</h1>
+
+          <div class="header__logo-overlay"></div>
+        </div>
+
+        <ul class="header__menu" data-aos="fade-down">
+          <li>
+            <a href="#menu">Menu</a>
+          </li>
+          <li>
+            <a href="#food">Food</a>
+          </li>
+          <li>
+            <a href="#services">Services</a>
+          </li>
+          <li>
+            <a href="#about-us">About Us</a>
+          </li>
+        </ul>
+
+        <ul class="header__menu-mobile" data-aos="fade-down">
+          <li>
+            <img src="assets/menu.svg" alt="menu" />
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-image">
+        <img src="assets/bgmain1.jpg" alt="sushi" data-aos="fade-up" />
+        <h2 data-aos="fade-up">
+          D <br />
+          E <br />
+          L<br />
+          I <br />
+          T <br />
+          E
+        </h2>
+
+        <div class="hero-image__overlay"></div>
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-content-info" data-aos="fade-left">
+          <h1>Taste that Your Heart Craves</h1>
+          <p>
+            Feel the taste of the most popular Arbian Snacks from anywhere and
+            anytime.
+          </p>
+
+          <div class="hero-content__buttons">
+            <a
+              href="https://www.zomato.com/aurangabad/cruncho-broasta-1-nirala-bazar"
+              target="_blank"
+            >
+              <button class="hero-content__order-button">Order Now</button>
+            </a>
+            <button class="hero-content__play-button">
+              <img src="assets/play-circle.svg" alt="play" />
+              Book Party Order
+            </button>
+          </div>
+        </div>
+
+        <div class="hero-content__testimonial" data-aos="fade-up">
+          <div class="hero-content__customer flex-center">
+            <h4>10<span>k+</span></h4>
+            <p>Happy Customers</p>
+          </div>
+
+          <div class="hero-content__review">
+            <img src="assets/user.png" alt="user" />
+            <p>"Best Frankies i ever had"</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-us" id="about-us">
+      <!-- <div class="about-us__image">
+        <div class="about-us__image-sushi3">
+          <img src="assets/cbmain.png" alt="sushi" data-aos="fade-right" />
+        </div>
+
+        <button class="about-us__button">
+          Learn More
+
+          <img src="assets/arrow-up-right.svg" alt="learn more" />
+        </button>
+
+        <div class="about-us__image-sushi2">
+          <img src="assets/Cb_Plater1.png" alt="sushi" data-aos="fade-right" />
+        </div>
+      </div> -->
+      <section class="burger-section">
+        <div class="burger">
+          <img src="./assets/product/top.png" class="layer top-bun" />
+          <img src="./assets/product/center.png" class="layer center lettuce" />
+          <img src="./assets/product/plate.png" class="layer center tray" />
+          <img src="./assets/product/bottom.png" class="layer bottom-bun" />
+        </div>
+        <div class="drink_section">
+          <img src="./assets/product/drink.png" class="drink" />
+          <img src="./assets/product/bgfry.png" class="fry" />
+          <img
+            src="./assets/product/table-made-with-planks-Photoroom.png"
+            alt=""
+            class="table"
+          />
+        </div>
+      </section>
+      <div class="about-us__content" data-aos="fade-left">
+        <p class="sushi__subtitle">About Us / 私たちに関しては</p>
+        <h3 class="sushi__title">
+          Cruncho Brosta Our mission is to redefine fast food
+        </h3>
+        <p class="sushi__description">
+          by focusing on real, high-quality flavors—crafted with care, not
+          compromise. Instead of the processed, mass-produced meals found
+          everywhere else, we bring you food made with authenticity and passion.
+          <br />Inspired by the Japanese spirit of Omotenashi—a deep-rooted
+          culture of hospitality—we ensure that every meal is not just about
+          taste but an experience of warmth, quality, and satisfaction.
+        </p>
+      </div>
+    </section>
+
+    <section
+      class="slider-container"
+      style="display: flex; flex-direction: column; gap: 50px"
+      id="menu"
+    >
+      <h2 class="popular-foods__title" data-aos="flip-up">
+        Popular Food / 人気
+      </h2>
+      <div class="slider-images">
+        <div class="slider-img">
+          <img src="assets/product/lif.jpg" alt="" />
+          <h1>Burger</h1>
+          <div class="details-slider">
+            <h2>
+              Burger <br />
+              <p>151RS</p>
+            </h2>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="assets/product/legs_g.jpg" alt="" />
+          <h1>Burger1</h1>
+          <div class="details-slider">
+            <h2>
+              Burger <br />
+              <p>151RS</p>
+            </h2>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="assets/product/wrap.jpg" alt="" />
+          <h1>Burger2</h1>
+          <div class="details-slider">
+            <h2>
+              Burger <br />
+              <p>151RS</p>
+            </h2>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="assets/product/g1.jpg" alt="" />
+          <h1>Burger3</h1>
+          <div class="details-slider">
+            <h2>
+              Burger <br />
+              <p>151RS</p>
+            </h2>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="assets/product/gg.jpg" alt="" />
+          <h1>Burger4</h1>
+          <div class="details-slider">
+            <h2>
+              Burger <br />
+              <p>151RS</p>
+            </h2>
+          </div>
+        </div>
+        <div class="slider-img active">
+          <img src="assets/product/cruncho.jpg" alt="" />
+          <h1>Burger</h1>
+          <div class="details-slider">
+            <h2>
+              Burger <br />
+              <p>151RS</p>
+            </h2>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="assets/product/lif.jpg" alt="" />
+          <h1>Burger</h1>
+          <div class="details-slider">
+            <h2>
+              Burger <br />
+              <p>151RS</p>
+            </h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trending" id="food">
+      <section class="trending-sushi">
+        <div class="trending__content" data-aos="fade-right">
+          <p class="sushi__subtitle">
+            What’s Trending /<span><strong>トレンド</strong></span>
+          </p>
+
+          <h3 class="sushi__title">Crunchy & Delicious</h3>
+          <p class="sushi__description">
+            Experience the crispy, juicy, and flavor-packed delights that
+            everyone is loving!
+          </p>
+
+          <ul class="trending__list flex-between">
+            <li>
+              <div class="trending__icon flex-center">
+                <img src="assets/check.svg" alt="check" />
+              </div>
+              <p>Chicken Zinger Burger</p>
+            </li>
+            <li>
+              <div class="trending__icon flex-center">
+                <img src="assets/check.svg" alt="check" />
+              </div>
+              <p>Chicken Tikka Burger</p>
+            </li>
+            <li>
+              <div class="trending__icon flex-center">
+                <img src="assets/check.svg" alt="check" />
+              </div>
+              <p>Crispy wrap</p>
+            </li>
+            <li>
+              <div class="trending__icon flex-center">
+                <img src="assets/check.svg" alt="check" />
+              </div>
+              <p>Tandoori wrap</p>
+            </li>
+            <li>
+              <div class="trending__icon flex-center">
+                <img src="assets/check.svg" alt="check" />
+              </div>
+              <p>Temaki Sushi</p>
+            </li>
+            <li>
+              <div class="trending__icon flex-center">
+                <img src="assets/check.svg" alt="check" />
+              </div>
+              <p>Inari Sushi</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="trending__image top flex-center">
+          <img
+            src="assets/product/cruncho.jpg"
+            alt="sushi-4"
+            data-aos="fade-right"
+          />
+        </div>
+      </section>
+
+      <div class="trending__discover" data-aos="zoom-in">
+        <p>Discover</p>
+      </div>
+
+      <section class="trending-drinks">
+        <div class="trending__image bottom flex-center">
+          <img
+            src="assets/product/yum.jpg"
+            alt="sushi-4"
+            data-aos="fade-right"
+          />
+        </div>
+
+        <div class="trending__content" data-aos="fade-left">
+          <p class="sushi__subtitle">
+            Must-Try Sides /<span
+              ><strong>おすすめのサイドメニュー</strong></span
+            >s
+          </p>
+
+          <h3 class="sushi__title">
+            <h3 class="sushi__title">Crispy Bites & More</h3>
+          </h3>
+          <p class="sushi__description">
+            Feel the taste of the most delicious Japense drinks here.
+          </p>
+
+          <ul class="trending__list flex-between">
+            <li>
+              <div class="trending__icon flex-center">
+                <img src="assets/check.svg" alt="check" />
+              </div>
+              <p>Crispy Wings</p>
+            </li>
+            <li>
+              <div class="trending__icon flex-center">
+                <img src="assets/check.svg" alt="check" />
+              </div>
+              <p>Peri Peri Fries</p>
+            </li>
+            <li>
+              <div class="trending__icon flex-center">
+                <img src="assets/check.svg" alt="check" />
+              </div>
+              <p>Chicken Delite Pocket</p>
+            </li>
+            <li>
+              <div class="trending__icon flex-center">
+                <img src="assets/check.svg" alt="check" />
+              </div>
+              <p>Chicken Crispy Pocket</p>
+            </li>
+            <li>
+              <div class="trending__icon flex-center">
+                <img src="assets/check.svg" alt="check" />
+              </div>
+              <p>Popcorn Chicken</p>
+            </li>
+            <li>
+              <div class="trending__icon flex-center">
+                <img src="assets/check.svg" alt="check" />
+              </div>
+              <p>Crispy Chicken Legs</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </section>
+
+    <section class="subscription flex-center" id="services">
+      <h2 data-aos="flip-down">
+        We take party <br />
+        Orders
+        <br />
+        <span style="color: #ffae00c3; font-size: 70px">For Enquiry</span>
+      </h2>
+      <div
+        style="
+          border-left: 2px solid white;
+          margin-left: 50px;
+          text-align: start;
+        "
+      >
+        <form class="mx-5 flex justify-center">
+          <p data-aos="fade-up">
+            Get in Touch <br /><span
+              ><b style="font-weight: 700">お問い合わせください</b></span
+            >
+          </p>
+
+          <div class="form-group text-white">
+            <label for="exampleInputPassword1">Subject:</label>
+            <input
+              type="password"
+              class="form-control bg-transparent text-white"
+            />
+          </div>
+          <div class="form-group text-white">
+            <label for="exampleInputPassword1">Query:</label>
+            <textarea
+              type="password"
+              class="form-control bg-transparent text-white"
+              style="height: 150px; width: 300px"
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="btn btn bg-transparent border-white text-white"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer flex-between">
+      <div class="header__logo">
+        <h1><span>Cruncho</span> Brosta</h1>
+
+        <div class="header__logo-overlay"></div>
+      </div>
+
+      <ul class="footer__nav">
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#food">Food</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about-us">About Us</a></li>
+      </ul>
+
+      <ul class="footer__social">
+        <li class="flex-center">
+          <img src="assets/facebook.svg" alt="facebook" />
+        </li>
+        <li class="flex-center">
+          <img src="assets/instagram.svg" alt="instagram" />
+        </li>
+        <li class="flex-center">
+          <img src="assets/twitter.svg" alt="twitter" />
+        </li>
+      </ul>
+    </footer>
+
+    <script src="js/jQuery.js"></script>
+    <script>
+      document.querySelectorAll(".slider-img").forEach((item) => {
+        item.addEventListener("click", function () {
+          document
+            .querySelectorAll(".slider-img")
+            .forEach((el) => el.classList.remove("active")); // Remove active from all
+          this.classList.add("active"); // Add active to clicked item
+        });
+      });
+    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js" type="module"></script>
+    <script src="js/burger-script.js"></script>
+  </body>
+</html>
