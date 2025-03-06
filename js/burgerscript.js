@@ -2,10 +2,10 @@ document.addEventListener("DOMContentLoaded", function () {
   gsap.registerPlugin(ScrollTrigger);
 
   gsap.from(".top-bun", {
-    x: "-100vw",
+    y: "-100vw",
     opacity: 0,
     duration: 1,
-    delay: 1,
+    delay: 0.7,
     scrollTrigger: {
       trigger: ".burger",
       start: "top center",
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
     x: "-100vh",
     opacity: 0,
     duration: 1,
-    delay: 0.3,
+    delay: 0.5,
     scrollTrigger: {
       trigger: ".burger",
       start: "top center",
@@ -37,10 +37,10 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
   gsap.from(".tray", {
-    x: "-100vh",
+    y: "100vh",
     opacity: 0,
     duration: 1,
-
+    delay: 0.3,
     scrollTrigger: {
       trigger: ".burger",
       start: "top center",
@@ -69,6 +69,18 @@ document.addEventListener("DOMContentLoaded", function () {
       toggleActions: "play none none reverse",
     },
   });
+  gsap.from(".Popcorn", {
+    x: "-100vh", // Corrected from transform: rotate(-10deg);
+    opacity: 0,
+    duration: 1,
+    delay: 1,
+    scrollTrigger: {
+      trigger: ".burger",
+      start: "top center",
+      toggleActions: "play none none reverse",
+    },
+  });
+
   setTimeout(() => {
     ScrollTrigger.refresh();
   }, 100);
